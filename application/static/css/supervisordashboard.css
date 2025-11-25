@@ -1,0 +1,95 @@
+ 
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: #0062be;
+        }
+        
+        .sidebar {
+            background-color: #ffffff;
+            border-right: 1px solid #dee2e6;
+            min-height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+        
+        .project-card {
+            border: none;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-image {
+            height: 150px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-image:hover img {
+            transform: scale(1.1);
+        }
+        
+        .btn-custom {
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+        }
+        
+        .btn-primary {
+            background-color: #0062be;
+            border-color: #0062be;
+        }
+        
+        .btn-primary:hover {
+            background-color: #00509e;
+            border-color: #00509e;
+        }
+        
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        
+        .rating-stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+        
+        .evaluation-form {
+            background-color: #f1f9ff;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                min-height: auto;
+            }
+            
+            .project-actions {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1rem;
+            }
+        }

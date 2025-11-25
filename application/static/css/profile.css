@@ -1,0 +1,125 @@
+ 
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: #0062be;
+        }
+        
+        .sidebar {
+            background-color: #ffffff;
+            border-left: 1px solid #dee2e6;
+            min-height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+        
+        .profile-header {
+            background: linear-gradient(to right, #0062be, #00a5e1);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-radius: 1rem 1rem 0 0;
+        }
+        
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: white;
+            color: #0062be;
+            font-size: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link.active {
+            background-color: #e6f0fa;
+            color: #0062be !important;
+        }
+        
+        .project-card {
+            border: none;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-image {
+            height: 150px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .btn-custom {
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+        }
+        
+        .btn-primary {
+            background-color: #0062be;
+            border-color: #0062be;
+        }
+        
+        .btn-primary:hover {
+            background-color: #00509e;
+            border-color: #00509e;
+        }
+        
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        
+        .rating-stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+        
+        .stats-card {
+            background-color: #e6f0fa;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .stats-card i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                min-height: auto;
+                border-left: none;
+                border-bottom: 1px solid #dee2e6;
+            }
+            
+            .profile-avatar {
+                width: 80px;
+                height: 80px;
+                font-size: 2rem;
+            }
+        }
+    

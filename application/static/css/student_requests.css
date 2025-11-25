@@ -1,0 +1,107 @@
+/* Full height layout */
+html, body {
+    height: 100%;
+}
+
+.container-fluid.h-100 {
+    min-height: calc(100vh - 120px);
+}
+
+.row.h-100 {
+    min-height: 100%;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+    min-height: calc(100vh - 76px);
+}
+
+/* Card styling */
+.project-card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+}
+
+.project-image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Button group styling */
+.btn-group {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.btn-group .btn {
+    flex: 1;
+    min-width: 70px;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Student info styling */
+.student-info {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.student-info p {
+    margin-bottom: 0.3rem !important;
+}
+
+/* Badge styling */
+.badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .btn-group {
+        flex-direction: column;
+    }
+    
+    .btn-group .btn {
+        min-width: auto;
+    }
+    
+    .student-info {
+        font-size: 0.8rem;
+    }
+}
+
+/* Custom scrollbar for main content */
+main {
+    overflow-y: auto;
+    max-height: calc(100vh - 76px);
+}
+
+/* Ensure proper spacing */
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}

@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #4e73df;
+    --secondary-color: #f8f9fc;
+    --text-color: #5a5c69;
+    --light-color: #ffffff;
+    --dark-color: #2c3e50;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #f8f9fa;
+    color: var(--text-color);
+}
+
+.login-card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+}
+
+.login-image {
+    background: linear-gradient(rgba(78, 115, 223, 0.8), rgba(78, 115, 223, 0.8)), 
+                url('https://source.unsplash.com/random/600x800?office') center/cover no-repeat;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.image-content h3 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.image-content p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.card-body {
+    background-color: var(--light-color);
+}
+
+.logo {
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 10px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #3a5bd9;
+    border-color: #3a5bd9;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Animation for form */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-card .card-body {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .login-image {
+        display: none;
+    }
+    
+    .col-md-6 {
+        width: 100%;
+    }
+}

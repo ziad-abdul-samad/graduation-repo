@@ -1,0 +1,125 @@
+
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background-color: #0062be;
+        }
+        
+        .sidebar {
+            background-color: #ffffff;
+            border-left: 1px solid #dee2e6;
+            min-height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+        
+        .card-icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            color: white;
+            font-size: 1.25rem;
+        }
+        
+        .rating-stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+        }
+        
+        .criterion-container {
+            border-bottom: 1px solid #dee2e6;
+            padding: 1.5rem 0;
+        }
+        
+        .criterion-container:last-child {
+            border-bottom: none;
+        }
+        
+        .criterion-rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .criterion-rating input[type="range"] {
+            width: 100%;
+        }
+        
+        .criterion-details {
+            margin-top: 0.5rem;
+            padding: 1rem;
+            background-color: #f1f9ff;
+            border-radius: 0.5rem;
+        }
+        
+        .project-badge {
+            font-size: 0.85rem;
+            padding: 0.3rem 0.6rem;
+            border-radius: 0.5rem;
+        }
+        
+        .evaluation-form {
+            background-color: #f1f9ff;
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .btn-custom {
+            border-radius: 0.5rem;
+            padding: 0.5rem 1rem;
+        }
+        
+        .btn-primary {
+            background-color: #0062be;
+            border-color: #0062be;
+        }
+        
+        .btn-primary:hover {
+            background-color: #00509e;
+            border-color: #00509e;
+        }
+        
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        
+        .form-range::-webkit-slider-thumb {
+            background-color: #0062be !important;
+        }
+        
+        .form-range::-moz-range-thumb {
+            background-color: #0062be !important;
+        }
+        
+        @media (max-width: 768px) {
+            .sidebar {
+                position: relative;
+                min-height: auto;
+                border-left: none;
+                border-bottom: 1px solid #dee2e6;
+            }
+            
+            .criterion-rating {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            
+            .criterion-rating .form-range {
+                width: 100%;
+            }
+        }
+    
